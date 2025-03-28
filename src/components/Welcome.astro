@@ -1,1 +1,24 @@
-<div class="bg-black"></div>
+---
+import SeccionContainer from "./SeccionContainer.astro";
+import Badge from "./Badge.astro";
+---
+
+<main class="flex flex-col mb-10">
+  <SeccionContainer
+    class="pt-40 pb-10 items-start justify-between mx-auto"
+    id="Top"
+  >
+    <div class="flex flex-row gap-x-4 mb-4 mx-auto">
+      <img class="rounded-full size-16" src="/Foto.webp" alt="Aiar-NIño-Dev" />
+      <Badge />
+    </div>
+    <h1 class="text-5xl font-bold tracking-tight text-white">
+      Hola, Soy Aimar
+    </h1>
+    <p class="items-start mt-6 text-xl text-gray-400">
+      Ingeniro en sistemas con enfoque en el desarrollo web y la ciberseguridad,
+      me gusta aprender y descubrir cosas nuevas, soy de Colombia y tengo 23
+      años.
+    </p>
+  </SeccionContainer>
+</main>

@@ -1,24 +1,56 @@
 ---
 import SeccionContainer from "./SeccionContainer.astro";
 import Badge from "./Badge.astro";
+import SocialPill from "./SocialPill.astro";
+import Linkedin from "./Icons/IconsSocial/linkedinIcon.astro";
+import Github from "./Icons/IconsSocial/GithubIcon.astro";
+import Mail from "./Icons/IconsSocial/MailIcon.astro";
 ---
 
 <main class="flex flex-col mb-10">
   <SeccionContainer
-    class="pt-40 pb-10 items-start justify-between mx-auto"
+    class="section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
     id="Top"
   >
     <div class="flex flex-row gap-x-4 mb-4 mx-auto">
-      <img class="rounded-full size-16" src="/Foto.webp" alt="Aiar-NIño-Dev" />
+      <img
+        class="rounded-full shadow-lg w-16 h-17"
+        src="/Foto.webp"
+        alt="Aiar-NIño-Dev"
+      />
       <Badge />
     </div>
-    <h1 class="text-5xl font-bold tracking-tight text-white">
+    <h1 class="text-4xl font-bold tracking-tight text-white/90">
       Hola, Soy Aimar
     </h1>
-    <p class="items-start mt-6 text-xl text-gray-400">
-      Ingeniro en sistemas con enfoque en el desarrollo web y la ciberseguridad,
-      me gusta aprender y descubrir cosas nuevas, soy de Colombia y tengo 23
-      años.
+    <p
+      class="items-start mx-auto py-4 text-xl text-gray-700/80 dark:text-gray-400"
+    >
+      Soy un apasionado por la tecnología y el desarrollo de software. Me
+      encanta aprender y descubrir cosas nuevas.<span
+        class="text-sky-500 font-extralight italic"
+      >
+        Actualmente estoy desarrollando mis habilidades en el desarrollo web y
+        la ciberseguridad.
+      </span>
     </p>
+    <nav class="flex flex-row gap-x-3 mt-4">
+      <SocialPill href="https://www.linkedin.com/in/a-david-nino/">
+        <Linkedin class="size-6" />
+        Linkedin
+      </SocialPill>
+      <SocialPill href="https://github.com/David-Ramirez01">
+        <Github class="size-6" />
+        Github
+      </SocialPill>
+      <SocialPill href="mailto:aimardavidninor@hotmail.com">
+        <Mail class="size-6" />
+        Contactame
+      </SocialPill>
+    </nav>
+    <SeccionContainer
+      class="pt-40 pb-10 items-start justify-between mx-auto"
+      id="experiencia"
+    />
   </SeccionContainer>
 </main>

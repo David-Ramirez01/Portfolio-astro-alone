@@ -1,0 +1,37 @@
+---
+import ProyecsIcon from "./Icons/ProyecsIcon.astro";
+import EXP from "./ExpItem.astro";
+const Prj = [
+  {
+    title: "Analista de Siporte en sitio ",
+    description:
+      "Revision de tickets, soporte a usuarios, configuracion de equipos y redes.",
+    alt: "Noteworthy technology acquisitions 2021",
+    date: "2024 / 08 - Now",
+  },
+  {
+    title: "Callcenter - soporte tecnico",
+    description:
+      "Atencion ded PQR en soporte e intentar solventar los inconvenientes que presernten los usuarios.",
+    alt: "Noteworthy technology acquisitions 2021",
+    date: "2024 / 05 - 2024 / 07",
+  },
+  {
+    title: "Auxiliar de soporte tecnico",
+    description:
+      "Atencion a usuarios, soporte a equipos de computo y redes, configuracion de equipos.",
+    alt: "Noteworthy technology acquisitions 2021",
+    date: "2023 / 07 - 2024 / 02",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    Prj.map((item) => (
+      <li class="mb-10 ms-4">
+        <EXP {...item} />
+      </li>
+    ))
+  }
+</ol>

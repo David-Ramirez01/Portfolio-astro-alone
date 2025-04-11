@@ -5,6 +5,8 @@ import SocialPill from "./SocialPill.astro";
 import Linkedin from "./Icons/IconsSocial/linkedinIcon.astro";
 import Github from "./Icons/IconsSocial/GithubIcon.astro";
 import Mail from "./Icons/IconsSocial/MailIcon.astro";
+import Proyectos from "./Proy.astro";
+import PIcon from "./Icons/ProyecsIcon.astro";
 ---
 
 <main class="flex flex-col mb-10">
@@ -49,8 +51,13 @@ import Mail from "./Icons/IconsSocial/MailIcon.astro";
       </SocialPill>
     </nav>
     <SeccionContainer
-      class="pt-40 pb-10 items-start justify-between mx-auto"
+      class="px-1 pb-10 items-start justify-between mx-auto"
       id="experiencia"
     />
+    <div class="flex flex-row gap-x-2 items-center">
+      <PIcon class="size-9" />
+      <p class="font-semibold">EXPERIENCIA</p>
+    </div>
+    <Proyectos />
   </SeccionContainer>
 </main>

@@ -1,26 +1,40 @@
 ---
-import Pill from "./SocialPill.astro";
-const { title, img, Descripcion, link, tools } = Astro.props;
+const { Title, img, Descripcion, link, Tools } = Astro.props;
 ---
 
 <a
-  href=`${link}`
+  href={link}
   target="_blank"
-  class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-300 ease-in-out"
+  class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 transition-transform transform hover:scale-105 duration-300 ease-in-out"
 >
   <img
-    class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-    src=`${img}`
-    alt=`imagen de ${title}`
+    class="object-cover w-full h-50 rounded-t-lg md:h md:w-55 md:rounded-none md:rounded-l-lg"
+    src={img}
+    alt={`imagen de ${Title}`}
   />
-  <div class="flex flex-col justify-between p-4 leading-normal">
+  <div class="flex flex-col justify-between p-4 leading-normal w-full">
     <h5
       class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
     >
-      {title}
+      {Title}
     </h5>
     <p class="mb-3 text-sky-500 font-extralight italic">
       {Descripcion}
     </p>
+    <div class="flex flex-wrap gap-2 mt-2">
+      {
+        Tools.map((tool) => {
+          const Icon = tool.icon;
+          return (
+            <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-md">
+              <Icon class={`size-4 ${tool.color}`} />
+              <span class="text-sm text-gray-800 dark:text-gray-200">
+                {tool.name}
+              </span>
+            </div>
+          );
+        })
+      }
+    </div>
   </div>
 </a>

@@ -1,5 +1,10 @@
 ---
 import Cards from "./Cards.astro";
+import React from "./Icons/Icontools/React.astro";
+import Bootstrap from "./Icons/Icontools/bootstrap.astro";
+import JSIcon from "./Icons/Icontools/JSIcon.astro";
+// Si quieres usar Firebase más adelante, también impórtalo aquí
+
 const prj = [
   {
     Title: "Autenticación con Firebase",
@@ -9,26 +14,29 @@ const prj = [
     link: "https://github.com/David-Ramirez01/Test-CB",
     Tools: [
       {
-        name: "HTML",
-        icon: "/html.svg",
+        name: "React",
+        icon: React,
+        color: "text-sky-500",
       },
       {
-        name: "CSS",
-        icon: "/css.svg",
+        name: "Bootstrap",
+        icon: Bootstrap,
+        color: "text-purple-500",
       },
       {
         name: "JavaScript",
-        icon: "/js.svg",
+        icon: JSIcon,
+        color: "text-yellow-500",
       },
     ],
   },
 ];
 ---
 
-<ul class="py-4 flex gap-4">
+<ul class="py-4 flex flex-wrap gap-4 justify-center">
   {
     prj.map((item) => (
-      <li class="mx-auto mb-2">
+      <li class="w-full sm:w-auto">
         <Cards {...item} />
       </li>
     ))

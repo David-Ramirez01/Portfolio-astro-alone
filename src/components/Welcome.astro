@@ -9,6 +9,7 @@ import Proyectos from "./Proy.astro";
 import PIcon from "./Icons/ProyectIcons/ProyecsIcon.astro";
 import CodeIcon from "./Icons/ProyectIcons/CodeIcon.astro";
 import EXP from "./Experience.astro";
+import UserIcon from "./Icons/ProyectIcons/UserIcon.astro";
 ---
 
 <main class="flex flex-col mb-10">
@@ -72,5 +73,31 @@ import EXP from "./Experience.astro";
       </p>
       <EXP />
     </SeccionContainer>
+    <SeccionContainer id="sobre-mi" />
+    <div class="flex flex-row gap-x-2 justify-center items-center mx-auto mb-2">
+      <UserIcon class="size-8" />
+      <p class="font-semibold">SOBRE MÍ</p>
+    </div>
+    <div>
+      <div class="flex flex-row gap-x-4 mb-4 mx-auto">
+        <p class="text-white-700/60">
+          Apasionado de la tecnlogia ,Nacido el 2001 en la Guajira Colombiana
+          Con enfoque principal en el desarrollo web front-End utilizando
+          librerias JS, Cuento con conocimentos en Back-End aunque son muy
+          basicos.<br /><br /> Me gusta estar aprender cosas nuevas que me puedan
+          ayudar a crecer como individuo y como profesional, Egresado de la CUC asi
+          que mis focos son principalmente el desarrollo de software, gestion de
+          proyectos y manejo de redes.<br /><br />
+          Soy introvertido pero trato de mejorar, no soy de salir a fiestas todos
+          los dias soy mas de estar en casa y ver una pelicual o realizar un curso
+          para mejorar mis conocimientos.
+        </p>
+        <img
+          class="rounded-full shadow-lg w-60 h-60"
+          src="/Foto.webp"
+          alt="Aiar-NIño-Dev"
+        />
+      </div>
+    </div>
   </SeccionContainer>
 </main>

@@ -2,6 +2,11 @@
 const { class: className, id } = Astro.props;
 ---
 
+<!--  SeccionContainer.astro * This component is a container for sections of the
+page. * It is used to wrap the content of each section and provide a consistent
+layout. * It accepts an id and className as props to customize the section. * *
+@param string id - The id of the section. * @param string className - The class
+name of the section. -->
 <section id={id} class={`w-full lg:w-[740px] mx-auto ${className}`}>
   <slot />
 </section>

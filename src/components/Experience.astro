@@ -4,8 +4,8 @@ import React from "./Icons/Icontools/React.astro";
 import Bootstrap from "./Icons/Icontools/bootstrap.astro";
 import JSIcon from "./Icons/Icontools/JSIcon.astro";
 import Firebase from "./Icons/Icontools/FireBaseIcon.astro";
-// Si quieres usar Firebase más adelante, también impórtalo aquí
 
+// Vector que contiene los pryecto que eh realizado y/o estoy realizando
 const prj = [
   {
     Title: "Autenticación con Firebase",
@@ -36,10 +36,10 @@ const prj = [
       },
     ],
   },
-  
 ];
 ---
 
+<!-- lista de Proyectos que se cargan del vector de arriba y se envia a una card de forma dinamica -->
 <ul class="py-4 flex flex-wrap gap-4 justify-center">
   {
     prj.map((item) => (

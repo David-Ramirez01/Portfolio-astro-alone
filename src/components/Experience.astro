@@ -40,10 +40,10 @@ const prj = [
 ---
 
 <!-- lista de Proyectos que se cargan del vector de arriba y se envia a una card de forma dinamica -->
-<ul class="py-4 flex flex-wrap gap-4 justify-center">
+<ul class="flex flex-wrap justify-center py-4 mx-auto gap-4">
   {
     prj.map((item) => (
-      <li class="w-full sm:w-auto">
+      <li>
         <Cards {...item} />
       </li>
     ))

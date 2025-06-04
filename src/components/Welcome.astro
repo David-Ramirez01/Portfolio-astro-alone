@@ -10,11 +10,14 @@ import PIcon from "./Icons/ProyectIcons/ProyecsIcon.astro";
 import CodeIcon from "./Icons/ProyectIcons/CodeIcon.astro";
 import EXP from "./Experience.astro";
 import UserIcon from "./Icons/ProyectIcons/UserIcon.astro";
+
+
+
 ---
 
 <main class="flex flex-col mb-10">
   <SeccionContainer
-    class="section py-16 md:py-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+    class="section pt-16 md:pt-36 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
     id="Top"
   >
     <div class="flex flex-row gap-x-4 mb-4 mx-auto">
@@ -53,33 +56,41 @@ import UserIcon from "./Icons/ProyectIcons/UserIcon.astro";
         Contactame
       </SocialPill>
     </nav>
-    <SeccionContainer
-      class="px-1 pb-10 items-start justify-between mx-auto"
-      id="experiencia"
-    />
-    <div class="flex flex-row gap-x-2 items-center">
+  </SeccionContainer>
+  <SeccionContainer
+    class="section py-4 md:py-4 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+    id="experiencia"
+  >
+    <div class="flex flex-row gap-x-2 items-center pt-4">
       <PIcon class="size-9" />
       <p class="font-semibold">EXPERIENCIA</p>
     </div>
     <Proyectos />
-    <SeccionContainer id="proyectos">
-      <div class="flex flex-row gap-x-2 items-center">
-        <CodeIcon class="size-7" />
-        <p class="font-semibold">PROYECTOS</p>
-      </div>
-      <p class="text-gray-700/80 dark:text-gray-400">
-        Aquí hay algunos de mis proyectos más recientes. Puedes ver más en mi
-        perfil de Github.
-      </p>
-      <EXP />
-    </SeccionContainer>
-    <SeccionContainer id="sobre-mi" />
-    <div class="flex flex-row gap-x-2 justify-center items-center mx-auto mb-2">
+  </SeccionContainer>
+  <SeccionContainer
+    class="section py-4 md:py-4 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl"
+    id="proyectos"
+  >
+    <div class="flex flex-row gap-x-2 items-center">
+      <CodeIcon class="size-7" />
+      <p class="font-semibold">PROYECTOS</p>
+    </div>
+    <p class="text-gray-700/80 dark:text-gray-400">
+      Aquí hay algunos de mis proyectos más recientes. Puedes ver más en mi
+      perfil de Github.
+    </p>
+    <EXP />
+  </SeccionContainer>
+  <SeccionContainer
+    class="section py-4 md:py-4 scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl pb-2"
+    id="sobre-mi"
+  >
+    <div class="flex flex-row gap-x-2 justify-center items-center mx-auto">
       <UserIcon class="size-8" />
       <p class="font-semibold">SOBRE MÍ</p>
     </div>
     <div>
-      <div class="flex flex-row gap-x-4 mb-4 mx-auto">
+      <div class="flex flex-row gap-x-4 mx-auto">
         <p class="text-white-700/60">
           Apasionado de la tecnlogia ,Nacido el 2001 en la Guajira Colombiana
           Con enfoque principal en el desarrollo web front-End utilizando
@@ -99,5 +110,11 @@ import UserIcon from "./Icons/ProyectIcons/UserIcon.astro";
         />
       </div>
     </div>
+    <nav class="flex flex-row gap-x-3 mt-4">
+      <SocialPill>
+        <Mail />
+        aimardavidninor@hotmail.com
+      </SocialPill>
+    </nav>
   </SeccionContainer>
 </main>

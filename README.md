@@ -18,6 +18,6 @@
 </div>
 
 <p align="center">
-Este es un proyecto en solitario de mi, experimentando con ellframework de Astro en la creacion de un portfolio,
+Este es un proyecto en solitario de mi, experimentando con el framework de Astro en la creacion de un portfolio,
 Un agradecimiento especial a @Midudev por sus cursos en especial al de astro
 </p>
